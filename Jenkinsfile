@@ -22,7 +22,7 @@ pipeline {
                     }
 
                     // Checkout the branch
-                    git branch: branchName, url: 'https://github.com/josephpatricksoloman/web-app.git'
+                    git branch: branchName, url: 'https://github.com/josephpatricksoloman/ProjectG.git'
                 }
             }
         }
