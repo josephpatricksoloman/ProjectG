@@ -9,9 +9,9 @@ pipeline {
         stage('Push to Docker Hub') {
             steps {
                 script {
-                    // Use the correct credentials ID
+                    
                     withCredentials([usernamePassword(credentialsId: 'jose_dockerhub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
-                        // Login to Docker Hub
+                        
                         sh "echo '${DOCKER_PASSWORD}' | docker login -u '${DOCKER_USERNAME}' --password-stdin"
                         
                         def branch = env.GIT_BRANCH

@@ -1,1 +1,1 @@
-this is joseph patrick soloman
+Project G is done with jenkinsfile involved
