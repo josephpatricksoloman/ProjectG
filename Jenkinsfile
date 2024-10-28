@@ -14,7 +14,7 @@ pipeline {
 
                     // Set the IMAGE_TAG based on the branch
                     if (branchName == 'dev') {
-                        IMAGE_TAG = "josephpatricksoloman/dev:latest"
+                        IMAGE_TAG = "josephpatricksoloman/development:1.1"
                     } else if (branchName == 'main') {
                         IMAGE_TAG = "josephpatricksoloman/prod:latest"
                     } else {
