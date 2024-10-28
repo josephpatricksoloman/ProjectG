@@ -10,6 +10,9 @@ pipeline {
             steps {
                 script {
                     def branch = env.GIT_BRANCH
+                    // Login to Docker Hub
+                    sh 'echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin'
+                    
                     if (branch == 'origin/dev') {
                         sh 'docker push josephpatricksoloman/development:latest'
                     } else if (branch == 'origin/main') {
