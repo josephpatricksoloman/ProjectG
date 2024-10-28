@@ -27,6 +27,6 @@ pipeline {
         }
     }
     triggers {
-        pollSCM('* * * * *') // Poll SCM every minute .. just kidding
+        pollSCM('* * * * *') // Poll SCM every minute
     }
 }
